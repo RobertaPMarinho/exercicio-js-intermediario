@@ -1,65 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Exercício 05 - Desafio HTML, CSS, JS</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício 05 - Desafio HTML, CSS, JS</title>
 
-  <link rel="stylesheet" href="src/css/reset.css">
-  <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/reset.css" />
+    <link rel="stylesheet" href="src/css/style.css" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="imagens-slider">
+      <a href="#" id="seta-voltar" class="seta-voltar opacidade">
+        <img
+          class="imagem-seta"
+          src="./src/images/seta direita.png"
+          alt="seta voltar"
+        />
+      </a>
 
-</head>
-<body>
-  <div class="imagens-slider">
-    <a href="#" id="seta-voltar" class="seta-voltar opacidade">     
-      <img class="imagem-seta" src="./src/images/seta esquerda.png" alt="seta voltar" /></a>
+      <!--imagem 1-->
+      <div class="slide slide-rosa mostrar">
+        <div class="conteudo">
+          <h2 class="titulo">Título imagem 1</h2>
+          <p class="texto">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Repudiandae laboriosam perspiciatis eligendi molestias recusandae
+            eaque unde, explicabo, necessitatibus quam doloribus eum incidunt,
+            modi neque minus nostrum facere temporibus error ab.
+          </p>
 
-    <!--imagem 1-->
-    <div class="slide-rosa mostrar">
-      <div class="conteudo">
-        <h2 class="titulo">Título imagem 1</h2>
-        <p class="texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae laboriosam perspiciatis eligendi molestias recusandae eaque unde, explicabo, necessitatibus quam doloribus eum incidunt, modi neque minus nostrum facere temporibus error ab.</p>
-
-        <a href="#" class="botao rosa">Saiba mais</a>
+          <a href="#" class="botao rosa">Saiba mais</a>
+        </div>
       </div>
-
       <!--imagem 2-->
-      <div class="slide-verde">
+      <div class="slide slide-verde">
         <div class="conteudo">
           <h2 class="titulo">Título imagem 2</h2>
-          <p class="texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae laboriosam perspiciatis eligendi molestias recusandae eaque unde, explicabo, necessitatibus quam doloribus eum incidunt, modi neque minus nostrum facere temporibus error ab.</p>
-  
+          <p class="texto">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Repudiandae laboriosam perspiciatis eligendi molestias recusandae
+            eaque unde, explicabo, necessitatibus quam doloribus eum incidunt,
+            modi neque minus nostrum facere temporibus error ab.
+          </p>
+
           <a href="#" class="botao verde">Saiba mais</a>
         </div>
-
-        <!--imagem 3-->
-        <div class="slide-laranja">
-          <div class="conteudo">
-            <h2 class="titulo">Título imagem 3</h2>
-            <p class="texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae laboriosam perspiciatis eligendi molestias recusandae eaque unde, explicabo, necessitatibus quam doloribus eum incidunt, modi neque minus nostrum facere temporibus error ab.</p>
-    
-            <a href="#" class="botao laranja">Saiba mais</a>
-          </div>
-
-        <!--imagem 4-->  
-        <div class="slide-azul">
-          <div class="conteudo">
-            <h2 class="titulo">Título imagem 4</h2>
-            <p class="texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae laboriosam perspiciatis eligendi molestias recusandae eaque unde, explicabo, necessitatibus quam doloribus eum incidunt, modi neque minus nostrum facere temporibus error ab.</p>
-      
-            <a href="#" class="botao azul">Saiba mais</a>
-          </div>
-        </div>
-
-        <a href="#" id="seta-avancar" class="seta-avancar">
-          <img class="imagem-seta" src="./src/images/seta esquerda.png" alt="seta avançar" />
-        </a> 
       </div>
 
-  <script type="text/javascript" src="src/js/index.js"></script>
-</body>
+      <!--imagem 3-->
+      <div class="slide slide-laranja">
+        <div class="conteudo">
+          <h2 class="titulo">Título imagem 3</h2>
+          <p class="texto">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Repudiandae laboriosam perspiciatis eligendi molestias recusandae
+            eaque unde, explicabo, necessitatibus quam doloribus eum incidunt,
+            modi neque minus nostrum facere temporibus error ab.
+          </p>
+
+          <a href="#" class="botao laranja">Saiba mais</a>
+        </div>
+      </div>
+
+      <!--imagem 4-->
+      <div class="slide slide-azul">
+        <div class="conteudo">
+          <h2 class="titulo">Título imagem 4</h2>
+          <p class="texto">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Repudiandae laboriosam perspiciatis eligendi molestias recusandae
+            eaque unde, explicabo, necessitatibus quam doloribus eum incidunt,
+            modi neque minus nostrum facere temporibus error ab.
+          </p>
+
+          <a href="#" class="botao azul">Saiba mais</a>
+        </div>
+      </div>
+
+      <a href="#" id="seta-avancar" class="seta-avancar">
+        <img
+          class="imagem-seta"
+          src="./src/images/seta direita.png"
+          alt="seta avançar"
+        />
+      </a>
+    </div>
+    <script type="text/javascript" src="src/js/painel.js"></script>
+  </body>
 </html>
