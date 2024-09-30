@@ -6,6 +6,10 @@ let imagemAtual = 0;
 
 setaAvancar.addEventListener("click", function () {
   esconderImagemAberta();
+
+  imagemAtual++;
+
+  imagens[imagemAtual].classList.add("mostrar")
 });
 
 function esconderImagemAberta() {
