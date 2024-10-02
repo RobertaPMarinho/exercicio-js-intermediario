@@ -10,14 +10,29 @@ setaAvancar.addEventListener("click", function () {
     return;
   }
 
-  esconderImagemAberta();
-
   imagemAtual++;
 
-  imagens[imagemAtual].classList.add("mostrar");
+  esconderImagemAberta();
+  mostrarImagem();
+  mostrarOuEsconderSetas();
+  
+});
 
+setaVoltar.addEventListener("click", function () {
+  if (imagemAtual === 0) {
+    return;
+  }
+
+  imagemAtual--;
+
+  esconderImagemAberta();
+  mostrarImagem();
   mostrarOuEsconderSetas();
 });
+
+function mostrarImagem() {
+  imagens[imagemAtual].classList.add("mostrar");
+}
 
 function esconderImagemAberta() {
   const imagemAberta = document.querySelector(".mostrar");
